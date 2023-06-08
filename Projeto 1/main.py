@@ -36,7 +36,7 @@ else:
     if escolha2 == "nadando" or escolha2 == "nadar":
         print("\nVocê não sabe nadar. E morre afogado!")
     else:
-        escolha3 = input("\nVocê consegue encontrar um buraco e entra na gruta novamente! \nEm meio a escuridão você encontra duas portas na sua frente.\nO que você faz? Escolha a porta da esquerda ou direita?")
+        escolha3 = input("\nVocê consegue encontrar um buraco e entra na gruta novamente! \nEm meio a escuridão você encontra duas portas na sua frente.\nO que você faz? Escolha a porta da esquerda ou direita?").lower()
         if escolha3 == "esquerda" or escolha3 == "esquerdo": 
             print("Você entra em uma sala com um grande tesouro! Parabéns!")
         else:
