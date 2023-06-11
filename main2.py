@@ -42,13 +42,13 @@ else:
 
 computador = random.randint(0,2)
 if computador == 0:
-    print(f"Computador escolheu \n {rock}")
+    print(f"Computador escolheu \n {rock} pedra")
     computador = 0
 elif humano == 1:
-    print(f"Computador escolheu \n {paper}")
+    print(f"Computador escolheu \n {paper} papel")
     computador = 1
 else:
-    print(f"Computador escolheu \n {scissors}")
+    print(f"Computador escolheu \n {scissors} tesoura")
     computador = 2
 
 vitoria = "Parabéns você ganhou"
