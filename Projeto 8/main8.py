@@ -4,7 +4,7 @@ from art import logo
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
 def repetir():
-    '''Função para jogar outra partida.'''
+    '''Pergunta sim ou não para outra partida.'''
     rejogar = input("\nDeseja jogar mais?\nSim ou Não? ")
     if rejogar == "Sim" or rejogar == "sim":
         gerar_cartas()
