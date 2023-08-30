@@ -30,8 +30,6 @@ resources = {
     "coffee": 100,
 }
 
-# TODO criar report dos recursos
-
 agua_total = resources["water"]
 leite_total = resources["milk"]
 cafe_total = resources["coffee"]
