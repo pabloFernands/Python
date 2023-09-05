@@ -37,7 +37,7 @@ dinheiro_maquina = 0
 
 def pedir_bebida():
     global agua_total,leite_total, cafe_total, dinheiro_maquina
-    report = (f'{agua_total}\n{leite_total}\n{cafe_total}')
+    report = (f'{agua_total}\n{leite_total}\n{cafe_total}\n{dinheiro_maquina}$')
 
     pedido = input(f'O que você gostaria? espresso, latte or cappuccino: ')
     if pedido == "report":
@@ -49,7 +49,6 @@ def pedir_bebida():
     nickles = int(input('Quantas moedas de 5 centavos?')) * 0.05
     pennies = int(input('Quantas moedas de 1 centavos?')) * 0.01
     total_moedas = round(quartes + dimes + nickles + pennies, 2)
-    print(f'Você tem {total_moedas} para usar.')
     dinheiro_maquina += total_moedas
 
     if pedido == "espresso":
@@ -60,7 +59,6 @@ def pedir_bebida():
                     agua_total -= MENU[pedido]["ingredients"]["water"]
                     cafe_total -= MENU[pedido]["ingredients"]["coffee"]
                     report = (f'{agua_total}\n{leite_total}\n{cafe_total}')
-                    print(report)
                     print(f'Sobrou de troco: {round(total_moedas,2)}\nAprovite a sua bebida.\n')
                     pedir_bebida()
                 else:
@@ -81,7 +79,6 @@ def pedir_bebida():
                         cafe_total -= MENU[pedido]["ingredients"]["coffee"]
                         leite_total -= MENU[pedido]["ingredients"]["milk"]
                         report = (f'{agua_total}\n{leite_total}\n{cafe_total}')
-                        print(report)
                         print(f'Sobrou de troco: {round(total_moedas,2)}\nAprovite a sua bebida.\n')
                         pedir_bebida()
                     else:
@@ -104,7 +101,6 @@ def pedir_bebida():
                         cafe_total -= MENU[pedido]["ingredients"]["coffee"]
                         leite_total -= MENU[pedido]["ingredients"]["milk"]
                         report = (f'{agua_total}\n{leite_total}\n{cafe_total}')
-                        print(report)
                         print(f'Sobrou de troco: {round(total_moedas,2)}\nAprovite a sua bebida.\n')
                         pedir_bebida()
                     else:
