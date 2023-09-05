@@ -33,10 +33,10 @@ resources = {
 agua_total = resources["water"]
 leite_total = resources["milk"]
 cafe_total = resources["coffee"]
-
+dinheiro_maquina = 0
 
 def pedir_bebida():
-    global agua_total,leite_total, cafe_total
+    global agua_total,leite_total, cafe_total, dinheiro_maquina
     report = (f'{agua_total}\n{leite_total}\n{cafe_total}')
 
     pedido = input(f'O que você gostaria? espresso, latte or cappuccino: ')
@@ -50,7 +50,7 @@ def pedir_bebida():
     pennies = int(input('Quantas moedas de 1 centavos?')) * 0.01
     total_moedas = round(quartes + dimes + nickles + pennies, 2)
     print(f'Você tem {total_moedas} para usar.')
-
+    dinheiro_maquina += total_moedas
 
     if pedido == "espresso":
         if total_moedas >= 1.5:
