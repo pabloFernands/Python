@@ -37,7 +37,7 @@ dinheiro_maquina = 0
 
 def pedir_bebida():
     global agua_total,leite_total, cafe_total, dinheiro_maquina
-    report = (f'{agua_total}\n{leite_total}\n{cafe_total}\n{dinheiro_maquina}$')
+    report = f'{agua_total}\n{leite_total}\n{cafe_total}\n{dinheiro_maquina}$'
 
     pedido = input(f'O que você gostaria? espresso, latte or cappuccino: ')
     if pedido == "report":
