@@ -1,5 +1,5 @@
 student_dict = {
-    "student": ["Angela", "James", "Lily"], 
+    "student": ["Angela", "James", "Lily"],
     "score": [56, 76, 98]
 }
 
@@ -20,13 +20,22 @@ for (index, row) in student_data_frame.iterrows():
 # Keyword Method with iterrows()
 # {new_key:new_value for (index, row) in df.iterrows()}
 data = pandas.read_csv("nato_phonetic_alphabet.csv")
-#TODO 1. Create a dictionary in this format:
-{"A": "Alfa", "B": "Bravo"}
+
 naut_dictionary = {row.letter:row.code for (index, row) in data.iterrows()}
 print(naut_dictionary)
 print(naut_dictionary["A"])
-#TODO 2. Create a list of the phonetic code words from a word that the user inputs.
-word = input("Enter a word: ").upper()
-word_found = [naut_dictionary[letter] for letter in word]
 
-print(word_found)
+
+def create_nautic():
+    '''Create Nautic words from letters'''
+    word = input("Enter a word: ").upper()
+    try:
+        word_found = [naut_dictionary[letter] for letter in word]
+    except KeyError:
+        print("You need to put only letters.")
+        create_nautic()
+    else:
+        print(word_found)
+
+create_nautic()
+
