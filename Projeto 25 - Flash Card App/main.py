@@ -30,9 +30,6 @@ def read_words_french():
     canvas.itemconfig(card_image, image=IMAGE_FRONT_CARD)
     flip_timer = window.after(3000, func=read_words_english)
     print(current_card)
-
-
-
     #print(french_word)
     return
 
