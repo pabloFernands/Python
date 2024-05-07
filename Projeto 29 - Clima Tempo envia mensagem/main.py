@@ -3,7 +3,7 @@ import os
 import requests
 from twilio.rest import Client
 
-#account_sid = "xx"
+#account_sid = ""
 #auth_token = os.getenv("owm_auth_token")
 
 latitude = -31.746611
