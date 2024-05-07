@@ -44,8 +44,8 @@ if rain:
     message = client.messages \
         .create(
         body="Vai chover! Pegue um guarda chuva.☂️",
-        from_="+22",
-        to="+22"
+        from_="+",
+        to="+"
         )
 
 print(message.status)
