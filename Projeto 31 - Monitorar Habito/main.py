@@ -2,7 +2,7 @@ import requests
 from datetime import datetime
 
 USERNAME = "pablauto"
-TOKEN = "asht7asdt27948"
+TOKEN = ""
 
 pixela_endpoint = "https://pixe.la/v1/users"
 
@@ -27,7 +27,7 @@ graph_config = {
 }
 
 graph_header = {
-    "X-USER-TOKEN": "asht7asdt27948"
+    "X-USER-TOKEN": ""
 }
 
 graph_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs"
