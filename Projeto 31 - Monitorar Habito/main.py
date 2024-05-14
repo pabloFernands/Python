@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime
 
-USERNAME = "pablauto"
+USERNAME = ""
 TOKEN = ""
 
 pixela_endpoint = "https://pixe.la/v1/users"
@@ -43,6 +43,7 @@ graph_update = {
     "date": date,
     "quantity": ask_quantity
 }
+print(graph_update)
 
 graph_post_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}"
 #graph_requests = requests.post(url=graph_post_endpoint, json=graph_update, headers=graph_header)
