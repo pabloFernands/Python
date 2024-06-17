@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change Rating</title>
+</head>
+<body>
+    <ul>
+      {% for book in all_books %}
+      <li>{{ book[1] }} - {{ book[2] }} - {{ book[3] }} </li>
+
+      {% endfor %}
+    </ul>
+    <input name="rating" type="text" />
+
+</body>
+</html>
